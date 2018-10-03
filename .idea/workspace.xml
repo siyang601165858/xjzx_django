@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0c2880c-aa5d-4ddf-82f2-cc9ef0aa0adb" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/django_news/django_news/utils/constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/django_news/django_news/utils/to_dict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_news/django_news/apps/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_news/django_news/apps/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/django_news/django_news/apps/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_news/django_news/apps/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_news/django_news/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_news/django_news/settings/dev.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,8 +57,8 @@
       <file leaf-file-name="dev.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_news/django_news/settings/dev.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
+            <state relative-caret-position="-3095">
+              <caret line="66" column="97" selection-start-line="66" selection-start-column="97" selection-end-line="66" selection-end-column="97" />
             </state>
           </provider>
         </entry>
@@ -74,8 +78,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_news/django_news/apps/users/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="176">
+              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -83,15 +87,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.virtualenvs/meiduo/lib/python3.5/site-packages/rest_framework/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="485" column="28" lean-forward="true" selection-start-line="485" selection-start-column="28" selection-end-line="485" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="115" column="55" lean-forward="true" selection-start-line="115" selection-start-column="55" selection-end-line="115" selection-end-column="55" />
+            <state relative-caret-position="196">
+              <caret line="137" selection-start-line="137" selection-end-line="137" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
                 <element signature="e#322#905#0" />
+                <element signature="e#1202#2435#0" />
+                <element signature="e#2576#2636#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front_end_pc/templates/news/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="704">
+              <caret line="41" column="17" lean-forward="true" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/front_end_pc/templates/news/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="42" column="64" lean-forward="true" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -99,10 +132,35 @@
       <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="129" selection-start-line="129" selection-end-line="129" />
+            <state relative-caret-position="179">
+              <caret line="133" selection-start-line="133" selection-end-line="133" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#147#1205#0" />
+                <element signature="e#1391#3300#0" />
+                <element signature="e#3437#4103#0" />
+                <element signature="e#4240#4288#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="constants.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_news/django_news/utils/constants.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="to_dict.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/django_news/django_news/utils/to_dict.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,11 +202,13 @@
         <option value="$PROJECT_DIR$/django_news/django_news/utils/captcha/captcha.py" />
         <option value="$PROJECT_DIR$/django_news/django_news/urls.py" />
         <option value="$PROJECT_DIR$/django_news/django_news/libs/yuntongxun/sms.py" />
-        <option value="$PROJECT_DIR$/django_news/django_news/settings/dev.py" />
         <option value="$PROJECT_DIR$/django_news/django_news/apps/users/models.py" />
-        <option value="$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py" />
         <option value="$PROJECT_DIR$/django_news/django_news/apps/users/urls.py" />
+        <option value="$PROJECT_DIR$/django_news/django_news/settings/dev.py" />
+        <option value="$PROJECT_DIR$/django_news/django_news/utils/to_dict.py" />
+        <option value="$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py" />
         <option value="$PROJECT_DIR$/django_news/django_news/apps/users/views.py" />
+        <option value="$PROJECT_DIR$/front_end_pc/templates/news/base.html" />
       </list>
     </option>
   </component>
@@ -162,9 +222,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="328" />
-    <option name="y" value="63" />
-    <option name="width" value="1828" />
+    <option name="x" value="141" />
+    <option name="y" value="62" />
+    <option name="width" value="1618" />
     <option name="height" value="805" />
   </component>
   <component name="ProjectView">
@@ -195,35 +255,25 @@
               <item name="xjzx_django" type="462c0819:PsiDirectoryNode" />
               <item name="django_news" type="462c0819:PsiDirectoryNode" />
               <item name="django_news" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xjzx_django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xjzx_django" type="462c0819:PsiDirectoryNode" />
-              <item name="django_news" type="462c0819:PsiDirectoryNode" />
-              <item name="django_news" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xjzx_django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xjzx_django" type="462c0819:PsiDirectoryNode" />
-              <item name="django_news" type="462c0819:PsiDirectoryNode" />
-              <item name="django_news" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="xjzx_django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="xjzx_django" type="462c0819:PsiDirectoryNode" />
-              <item name="django_news" type="462c0819:PsiDirectoryNode" />
-              <item name="django_news" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-              <item name="yuntongxun" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="xjzx_django" type="b2602c69:ProjectViewProjectNode" />
               <item name="xjzx_django" type="462c0819:PsiDirectoryNode" />
               <item name="front_end_pc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xjzx_django" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xjzx_django" type="462c0819:PsiDirectoryNode" />
+              <item name="front_end_pc" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xjzx_django" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xjzx_django" type="462c0819:PsiDirectoryNode" />
+              <item name="front_end_pc" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -368,24 +418,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="328" y="63" width="1828" height="805" extended-state="0" />
+    <frame x="141" y="62" width="1618" height="805" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Redis Servers" weight="0.3296" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.52584934" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.52584934" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" weight="0.38388625" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16461366" />
+      <window_info anchor="bottom" id="Terminal" weight="0.38257018" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18654822" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" weight="0.08094556" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="SciView" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.56868535" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.40915805" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" weight="0.328594" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -407,113 +457,103 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py</url>
-          <line>104</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py</url>
-          <line>99</line>
+          <line>100</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py</url>
-          <line>96</line>
+          <line>97</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py</url>
-          <line>88</line>
+          <line>89</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py</url>
-          <line>81</line>
+          <line>82</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py</url>
-          <line>118</line>
+          <line>119</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py</url>
-          <line>115</line>
+          <line>116</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py</url>
-          <line>116</line>
+          <line>117</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py</url>
-          <line>112</line>
+          <line>113</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py</url>
-          <line>111</line>
+          <line>112</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py</url>
-          <line>110</line>
+          <line>111</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py</url>
-          <line>107</line>
+          <line>108</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py</url>
-          <line>104</line>
+          <line>105</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py</url>
-          <line>105</line>
+          <line>106</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py</url>
-          <line>112</line>
-          <option name="timeStamp" value="59" />
+          <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py</url>
+          <line>137</line>
+          <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py</url>
-          <line>113</line>
-          <option name="timeStamp" value="60" />
+          <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py</url>
+          <line>135</line>
+          <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py</url>
-          <line>116</line>
-          <option name="timeStamp" value="61" />
+          <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py</url>
+          <line>133</line>
+          <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py</url>
-          <line>118</line>
-          <option name="timeStamp" value="62" />
+          <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py</url>
+          <line>132</line>
+          <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py</url>
-          <line>121</line>
-          <option name="timeStamp" value="63" />
+          <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py</url>
+          <line>130</line>
+          <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py</url>
-          <line>124</line>
-          <option name="timeStamp" value="64" />
+          <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py</url>
+          <line>128</line>
+          <option name="timeStamp" value="85" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py</url>
-          <line>127</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py</url>
-          <line>129</line>
-          <option name="timeStamp" value="66" />
+          <url>file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py</url>
+          <line>125</line>
+          <option name="timeStamp" value="86" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -523,7 +563,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="67" />
+      <option name="time" value="87" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -558,13 +598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_news/django_news/utils/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -633,13 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/meiduo/lib/python3.5/site-packages/rest_framework/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="479" selection-start-line="479" selection-end-line="479" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/meiduo/lib/python3.5/site-packages/rest_framework/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-458">
@@ -654,13 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_news/django_news/settings/dev.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="213" lean-forward="true" selection-start-line="213" selection-end-line="213" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django_news/django_news/apps/users/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -671,34 +690,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/django_news/django_news/settings/dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3095">
+          <caret line="66" column="97" selection-start-line="66" selection-start-column="97" selection-end-line="66" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_news/django_news/utils/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/meiduo/lib/python3.5/site-packages/django/shortcuts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="27" column="68" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_news/django_news/utils/to_dict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/django_news/django_news/apps/users/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="176">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/django_news/django_news/utils/constants.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/django_news/django_news/apps/users/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="129" selection-start-line="129" selection-end-line="129" />
+        <state relative-caret-position="179">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#147#1205#0" />
+            <element signature="e#1391#3300#0" />
+            <element signature="e#3437#4103#0" />
+            <element signature="e#4240#4288#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front_end_pc/static/news/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/meiduo/lib/python3.5/site-packages/rest_framework/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="485" column="28" lean-forward="true" selection-start-line="485" selection-start-column="28" selection-end-line="485" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_news/django_news/apps/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="115" column="55" lean-forward="true" selection-start-line="115" selection-start-column="55" selection-end-line="115" selection-end-column="55" />
+        <state relative-caret-position="196">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
             <element signature="e#322#905#0" />
+            <element signature="e#1202#2435#0" />
+            <element signature="e#2576#2636#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front_end_pc/templates/news/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="41" column="17" lean-forward="true" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front_end_pc/templates/news/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="42" column="64" lean-forward="true" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
         </state>
       </provider>
     </entry>

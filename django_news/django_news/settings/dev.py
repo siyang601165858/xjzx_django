@@ -64,7 +64,7 @@ ROOT_URLCONF = 'django_news.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(os.path.dirname(os.path.dirname(BASE_DIR)), 'front_end_pc/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

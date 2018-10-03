@@ -2,7 +2,7 @@ import random
 from datetime import datetime
 
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.utils import timezone
@@ -14,6 +14,7 @@ from rest_framework.views import APIView
 from django_news.libs.yuntongxun.sms import CCP
 from django_news.utils.captcha.captcha import captcha
 from django_news.utils.response_code import RET
+from django_news.utils.to_dict import user_to_dict
 from users.models import User
 from users.serializers import SMSSerializer, RegisterSerializer, LoginSerializer
 
@@ -117,3 +118,21 @@ class LoginView(APIView):
         user.save()
 
         return Response({'errno': RET.OK, 'errmsg': "登录成功"})
+
+
+class IndexView(APIView):
+
+    def get(self, request):
+        user_id = request.session.get('user_id')
+
+        try:
+            user = User.objects.get(id=user_id)
+        except:
+            user = None
+
+        if user:
+            data = user_to_dict(user)
+
+            return render(request, 'news/index.html', context=data)
+
+        return render(request, 'news/index.html')

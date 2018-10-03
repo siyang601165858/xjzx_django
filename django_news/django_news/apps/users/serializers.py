@@ -6,6 +6,7 @@ from rest_framework import serializers
 from rest_framework.response import Response
 
 from django_news.utils.response_code import RET
+from django_news.utils.to_dict import user_to_dict
 from users.models import User
 
 
@@ -128,3 +129,20 @@ class LoginSerializer(serializers.Serializer):
         attrs['user'] = user
 
         return attrs
+
+
+# class IndexSerializer(serializers.Serializer):
+#
+#     def validate(self, attrs):
+#         user_id = self.context['request'].session('user_id')
+#         try:
+#             user = User.objects.get(id=user_id)
+#         except:
+#             user = None
+#
+#         if user:
+#             data = user_to_dict(user)
+#
+#             attrs['data'] = data
+#
+#         return attrs
