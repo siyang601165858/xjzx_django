@@ -1,4 +1,5 @@
 import re
+from datetime import datetime
 
 from django_redis import get_redis_connection
 from rest_framework import serializers
@@ -90,6 +91,8 @@ class RegisterSerializer(serializers.Serializer):
         user.username = mobile
         user.mobile = mobile
         user.set_password(password)
+        # 改最后一次登录时间
+        user.last_login = datetime.now()
         # 保存
         user.save()
 
@@ -100,3 +103,28 @@ class RegisterSerializer(serializers.Serializer):
         request.session['mobile'] = user.mobile
 
         return Response({'errno': RET.OK, 'errmsg': "创建用户成功"})
+
+
+class LoginSerializer(serializers.Serializer):
+    mobile = serializers.CharField(max_length=11, min_length=11, required=True)
+    password = serializers.CharField(min_length=8, max_length=20, required=True, write_only=True)
+
+    def validate(self, attrs):
+        mobile = attrs['mobile']
+        password = attrs['password']
+
+        try:
+            user = User.objects.get(mobile=mobile)
+        except:
+            return Response({'errno': RET.USERERR, 'errmsg': '用户不存在'})
+
+        # 验证密码
+        result = user.check_password(password)
+
+        if not result:
+            return Response({'errno': RET.PWDERR, 'errmsg': '密码错误'})
+
+        # 放在这里,后面的视图要用
+        attrs['user'] = user
+
+        return attrs

@@ -1,9 +1,11 @@
 import random
+from datetime import datetime
 
 from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
+from django.utils import timezone
 from django_redis import get_redis_connection
 from rest_framework.generics import GenericAPIView, CreateAPIView
 from rest_framework.response import Response
@@ -13,7 +15,7 @@ from django_news.libs.yuntongxun.sms import CCP
 from django_news.utils.captcha.captcha import captcha
 from django_news.utils.response_code import RET
 from users.models import User
-from users.serializers import SMSSerializer, RegisterSerializer
+from users.serializers import SMSSerializer, RegisterSerializer, LoginSerializer
 
 
 class GetImageCode(APIView):
@@ -71,8 +73,9 @@ class SendSMSCode(APIView):
         # 生成验证码
         sms_code = '%06d' % random.randint(0, 999999)
         print(sms_code)
-        result = CCP().send_template_sms(mobile, [sms_code, 300 / 60], "1")
-        # if result != 0:     # 不再发送短信
+        # 不再发送短信
+        # result = CCP().send_template_sms(mobile, [sms_code, 300 / 60], "1")
+        # if result != 0:
         #     return Response({'errno': RET.THIRDERR, 'errmsg': '发送短信失败'})
 
         # 将短信保存到redis中
@@ -91,3 +94,26 @@ class RegisterView(CreateAPIView):
     '''
     serializer_class = RegisterSerializer
 
+
+class LoginView(APIView):
+    '''
+    登录: 不需要更改是数据库,所以自己写
+    '''
+
+    def post(self, request):
+        # 反序列化验证数据
+        serializer = LoginSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        # 获取数据
+        user = serializer.validated_data['user']
+
+        # 将用户信息保存到session中
+        request.session['user_id'] = user.id
+        request.session['username'] = user.username
+        request.session['mobile'] = user.mobile
+
+        # 改最后一次登录时间
+        user.last_login = datetime.now(tz=timezone.utc)
+        user.save()
+
+        return Response({'errno': RET.OK, 'errmsg': "登录成功"})
