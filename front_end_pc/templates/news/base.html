@@ -39,7 +39,7 @@
                 <img src="{% if data.user_info.avatar_url %}
                     {{ data.user_info.avatar_url }}{% else %}../../static/news/images/person01.png{% endif %}"
                      class="lgin_pic">
-                <a href="{{ url_for('profile.get_user_info') }}" id="nick_name">{{ data.user_info.nick_name }}</a>
+                <a href="{{ url_for('profile.get_user_info') }}" id="username">{{ data.user_info.username }}</a>
                 <a href="javascript:;" onclick="logout()">退出</a>
             </div>
             <!-- 用户登录后显示上面，隐藏下面，反之取反 -->

@@ -5,7 +5,7 @@ from django.shortcuts import render
 
 # Create your views here.
 from django_redis import get_redis_connection
-from rest_framework.generics import GenericAPIView
+from rest_framework.generics import GenericAPIView, CreateAPIView
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
@@ -13,7 +13,7 @@ from django_news.libs.yuntongxun.sms import CCP
 from django_news.utils.captcha.captcha import captcha
 from django_news.utils.response_code import RET
 from users.models import User
-from users.serializers import SMSSerializer
+from users.serializers import SMSSerializer, RegisterSerializer
 
 
 class GetImageCode(APIView):
@@ -83,3 +83,11 @@ class SendSMSCode(APIView):
             return Response({'errno': RET.DBERR, 'errmsg': '保存短信失败'})
 
         return Response({'errno': RET.OK, 'errmsg': "发送成功"})
+
+
+class RegisterView(CreateAPIView):
+    '''
+    注册
+    '''
+    serializer_class = RegisterSerializer
+

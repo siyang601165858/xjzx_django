@@ -25,7 +25,7 @@
                 {% endif %}" alt="用户图片">
             </div>
 
-            <div class="user_center_name">{{ data.other_info.nick_name }}</div>
+            <div class="user_center_name">{{ data.other_info.username }}</div>
 
 
             <ul class="other_detail">
@@ -108,7 +108,7 @@
             ../../static/news/images/user_pic.png
             {% endif %}" alt="author_pic"></a>
             <a href="/user/other_info?id={{ data.news.author.id }}" target="_blank"
-               class="author_name">{{ data.news.author.nick_name }}</a>
+               class="author_name">{{ data.news.author.username }}</a>
             ...
         </div>
     {% endif %}
@@ -167,7 +167,7 @@
 {#            </div>#}
 {##}
 {##}
-{#            <div class="user_center_name">{{ data.other_info.nick_name }}</div>#}
+{#            <div class="user_center_name">{{ data.other_info.username }}</div>#}
 {##}
 {##}
 {#            <ul class="other_detail">#}

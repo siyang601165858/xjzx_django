@@ -113,7 +113,7 @@ $(function () {
                         comment_html += '<img src="../../static/news/images/person01.png" alt="用户图标">'
                     }
                     comment_html += '</div>'
-                    comment_html += '<div class="user_name fl">' + comment.user.nick_name + '</div>'
+                    comment_html += '<div class="user_name fl">' + comment.user.username + '</div>'
                     comment_html += '<div class="comment_text fl">'
                     comment_html += comment.content
                     comment_html += '</div>'
@@ -253,12 +253,12 @@ $(function () {
                             comment_html += '<img src="../../static/news/images/person01.png" alt="用户图标">'
                         }
                         comment_html += '</div>'
-                        comment_html += '<div class="user_name fl">' + comment.user.nick_name + '</div>'
+                        comment_html += '<div class="user_name fl">' + comment.user.username + '</div>'
                         comment_html += '<div class="comment_text fl">'
                         comment_html += comment.content
                         comment_html += '</div>'
                         comment_html += '<div class="reply_text_con fl">'
-                        comment_html += '<div class="user_name2">' + comment.parent.user.nick_name + '</div>'
+                        comment_html += '<div class="user_name2">' + comment.parent.user.username + '</div>'
                         comment_html += '<div class="reply_text">'
                         comment_html += comment.parent.content
                         comment_html += '</div>'

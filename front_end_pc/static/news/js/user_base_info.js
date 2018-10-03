@@ -9,10 +9,10 @@ $(function () {
         e.preventDefault()
 
         var signature = $("#signature").val()
-        var nick_name = $("#nick_name").val()
+        var username = $("#username").val()
         var gender = $(".gender").val()
 
-        if (!nick_name) {
+        if (!username) {
             alert('请输入昵称')
             return
         }
@@ -23,7 +23,7 @@ $(function () {
         // TODO 修改用户信息接口
          var params = {
             "signature": signature,
-            "nick_name": nick_name,
+            "username": username,
             "gender": gender
         }
         $.ajax({
@@ -37,8 +37,8 @@ $(function () {
             success:function (resp) {
                 if (resp.errno == "0") {
                     // 更新父窗口内容
-                    $('.user_center_name', parent.document).html(params['nick_name'])
-                    $('#nick_name', parent.document).html(params['nick_name'])
+                    $('.user_center_name', parent.document).html(params['username'])
+                    $('#username', parent.document).html(params['username'])
                     $('.input_sub').blur()
                 }else {
                     alert(resp.errmsg)
