@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # 子应用
+    'users.apps.UsersConfig',
+    'news.apps.NewsConfig',
 
 ]
 
@@ -192,3 +194,6 @@ REST_FRAMEWORK = {
     # 异常处理
     'EXCEPTION_HANDLER': 'django_news.utils.exceptions.exception_handler',
 }
+
+# 告知Django认证系统使用我们自定义的模型类
+AUTH_USER_MODEL = 'users.User'
