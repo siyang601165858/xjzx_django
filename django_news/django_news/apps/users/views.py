@@ -136,3 +136,20 @@ class IndexView(APIView):
             return render(request, 'news/index.html', context=data)
 
         return render(request, 'news/index.html')
+
+
+class LogoutView(APIView):
+    def post(self, request):
+        """
+            清除session中的对应登录之后保存的信息
+            :return:
+            """
+        if request.session.get('user_id'):
+
+            del request.session['user_id']
+            del request.session['username']
+            del request.session['mobile']
+
+            return Response({'errno': RET.OK, 'errmsg': "登出成功"})
+
+        return Response({'errno': RET.OK, 'errmsg': "本来就没登录"})
